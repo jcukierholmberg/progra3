@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+
 import Pelicula from './componentes/pelicula/Pelicula';
 
 function App() {
@@ -7,11 +8,13 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-          <h1 className="tituloApp"> Peliculas </h1>
+          <h1 className="tituloApp"> Nombre de la App </h1>
       </header>
 
-      <div> 
+      <div className= "Peliculas"> 
+        
          <Pelicula /> 
+
       </div>
     </div>
   );

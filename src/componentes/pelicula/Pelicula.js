@@ -3,7 +3,12 @@ import './Pelicula.css' ;
 
 function Pelicula() {
     return (
-        <h2 className="tituloPelicula"> Titulo de la pelicula </h2>
+        <div className= "tarjetaPelicula"> 
+
+            <h2 className="tituloPelicula"> Titulo de la pelicula </h2>
+
+        </div>
+    
         );
 }
 export default Pelicula ;

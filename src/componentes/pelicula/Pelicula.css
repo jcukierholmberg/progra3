@@ -1,3 +1,9 @@
 .tituloPelicula {
     color: red;
 }
+
+.tarjetaPelicula {
+    border-style: double;
+    border-radius: 1px;
+    border: red;
+}
