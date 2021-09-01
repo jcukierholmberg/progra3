@@ -12,10 +12,12 @@ function App() {
       </header>
 
       <div className= "Peliculas"> 
-        
          <Pelicula /> 
-
       </div>
+
+      <footer className="footer">
+        <h1> Flor aguirre, Joaquin Cukier, Kiara Anderson</h1>
+      </footer>
     </div>
   );
 }

@@ -44,3 +44,9 @@
   color: red;
   text-align: left;
 }
+
+.footer {
+position: absolute;
+bottom: 0px;
+width: 100%;
+}
