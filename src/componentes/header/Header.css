@@ -12,3 +12,15 @@
     color: red;
     text-align: left;
 }
+
+.Menu-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.Nav-menu{
+    margin: 10px;
+}

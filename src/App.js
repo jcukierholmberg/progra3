@@ -2,7 +2,6 @@
 import './App.css';
 
 import Pelicula from './componentes/pelicula/Pelicula';
-import Nav from './componentes/header/Header';
 import Header from './componentes/header/Header';
 
 function App() {
