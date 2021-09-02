@@ -2,13 +2,15 @@
 import './App.css';
 
 import Pelicula from './componentes/pelicula/Pelicula';
-import TopNav from './componentes/header/Nav';
+import Nav from './componentes/header/Header';
+import Header from './componentes/header/Header';
 
 function App() {
   return (
-    <div className="App">
+      
+      <div className="App">
 
-      <TopNav />
+      <Header />
 
       <div className= "Peliculas"> 
          <Pelicula /> 
