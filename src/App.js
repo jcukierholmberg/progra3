@@ -2,16 +2,17 @@
 import './App.css';
 
 import Pelicula from './componentes/pelicula/Pelicula';
+import TopNav from './componentes/header/Nav';
 
 function App() {
   return (
     <div className="App">
 
-      <header className="App-header">
-          <h1 className="tituloApp"> Nombre de la App </h1>
-      </header>
+      <TopNav />
 
       <div className= "Peliculas"> 
+         <Pelicula /> 
+         <Pelicula /> 
          <Pelicula /> 
       </div>
 
