@@ -1,12 +1,13 @@
 .App-header {
     background-color: #282c34;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     justify-content: left;
     font-size: calc(10px + 2vmin);
     color: white;
 }
+
 
 .tituloApp {
     color: red;
@@ -16,7 +17,7 @@
 .Menu-buttons{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-end;
     margin: 10px;
 }
