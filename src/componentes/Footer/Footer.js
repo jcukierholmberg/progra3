@@ -1,6 +1,6 @@
 import React from 'react';
 
-funciton Footer() {
+function Footer() {
     return(
     <ul className="footer">
                 <li>Joaquin Cukier</li>

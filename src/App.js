@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import Header from './componentes/Header/Header';
+import Header from './componentes/header/Header';
 import Footer from './componentes/Footer/Footer';
 import Card from './componentes/Card/Card';
 
