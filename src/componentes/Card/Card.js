@@ -1,8 +1,8 @@
 import React, {Component} from 'react'; 
-import './Pelicula.css' ;
+import './Card.css' ;
 import CardPelicula from '../cardPelicula/CardPelicula';
 
-class Pelicula extends Component{
+class Card extends Component{
 
     constructor(){
         super()
@@ -40,4 +40,4 @@ render(){
         );
     }
 }
-export default Pelicula ;
+export default Card ;
