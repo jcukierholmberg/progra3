@@ -12,9 +12,7 @@ function App() {
       <Header />
 
       <div className= "Peliculas"> 
-         <Pelicula /> 
-         <Pelicula /> 
-         <Pelicula /> 
+         <Pelicula />
       </div>
 
       <footer className="footer">

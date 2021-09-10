@@ -1,12 +1,13 @@
 import React, {Component} from 'react'; 
 import './Pelicula.css' ;
-
+import CardPelicula from '../cardPelicula/CardPelicula';
 
 class Pelicula extends Component{
 
     constructor(){
         super()
         this.state = {
+            peli:[],
         }
     }
     
@@ -20,25 +21,22 @@ class Pelicula extends Component{
     .then (data => {
         console.log(data)
         this.setState({
-            titulo: data.results.title,
+            peli: data.results
         })
     })
     .catch(error => console.log(error))
-
-}
+    }
 
 render(){
-    return (
-        <div className= "tarjetaPelicula"> 
-            
-            <h2> imagen </h2>
-            <h2 className="tituloPelicula"> Titulo </h2>
-            <p> descrpcion de la pelicula</p>
-
+    return (        
+        <React.Fragment>
+        <div className="contenedor-peliculas">
+            {
+                this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula}/>)
+            }
         </div>
-    
+        </React.Fragment>
         );
-}
-
+    }
 }
 export default Pelicula ;
