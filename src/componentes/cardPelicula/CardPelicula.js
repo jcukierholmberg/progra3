@@ -9,7 +9,7 @@ class CardPelicula extends Component{
     }
 
     render(){
-        console.log(this.props);
+        // console.log(this.props);
         return (
             <div className="card-pelicula">
                 <h4>{this.props.dataPelicula.title}</h4>

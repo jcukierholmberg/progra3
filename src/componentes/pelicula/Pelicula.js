@@ -8,29 +8,30 @@ class Pelicula extends Component{
         super()
         this.state = {
             peli:[],
+            nextURL: ''
         }
     }
     
     componentDidMount(){
 
-    let apikey = "?api_key=c2f0cd4705d9cf0edf12534fc1a19f65";
-    let url = "https://api.themoviedb.org/3/movie/popular";
+    let url = "https://api.themoviedb.org/3/movie/popular?api_key=c2f0cd4705d9cf0edf12534fc1a19f65";
 
-    fetch(url + apikey + "&page=3")
+    fetch(url)
     .then(response => response.json())
     .then (data => {
         console.log(data)
         this.setState({
-            peli: data.results
+            peli: data.results,
+            nextURL: data.page + 1
         })
     })
     .catch(error => console.log(error))
     }
 
 render(){
-    return (        
+    return (
         <React.Fragment>
-        <div className="contenedor-peliculas">
+        <div className="Peliculas">
             {
                 this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula}/>)
             }
