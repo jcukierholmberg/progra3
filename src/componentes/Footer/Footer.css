@@ -1,0 +1,11 @@
+Footer  {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: black
+}
+
+.text {
+    color: white;
+    text-decoration:none;
+}

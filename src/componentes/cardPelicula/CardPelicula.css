@@ -1,0 +1,28 @@
+.cards{
+    width: 25%;
+    padding: 10px;
+    gap:10px;
+    border-radius: 1px;
+    border-color: black;
+    outline-width:2px;
+    outline-style: solid;
+    outline-color: black;
+    max-height: 500px;
+
+}
+
+.more{
+    color: blue;
+}
+
+.more:hover{
+cursor: pointer;
+}
+
+.mostrar{
+    display: block;
+}
+
+.nomostrar{
+    display: none;
+}
