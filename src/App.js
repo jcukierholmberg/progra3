@@ -3,7 +3,7 @@ import './App.css';
 import React from "react";
 import Header from './componentes/header/Header';
 import Footer from './componentes/Footer/Footer';
-import Card from './componentes/Card/Card';
+import Pelicula from './componentes/Pelicula/Pelicula';
 
 
 function App(){
@@ -16,7 +16,7 @@ function App(){
           <button type="button">Cargar más tarjetas</button>
           <section class="card-container">
               <article>
-                  <Card />
+                  <Pelicula />
               </article>
               <article>
                   <section class="navigation">
@@ -167,7 +167,7 @@ function App(){
       <Header />
 
       <div className= "Peliculas"> 
-         <Card />
+         <Pelicula />
       </div>
 
       <footer className="footer">
