@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../Header/Header";
+import Header from "../header/Header";
 import FilterField from "../FilterField/FilterField";
-import CardPelicula from "../CardPelicula/CardPelicula";
+import CardPelicula from "../cardPelicula/CardPelicula";
 import './Main.css' ;
 
 class Main extends Component{
