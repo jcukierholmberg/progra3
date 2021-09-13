@@ -1,5 +1,5 @@
 .App-header {
-    background-color: #282c34;
+    background-color:black;
     display: flex;
     flex-direction: row;
     align-items: left;
@@ -24,4 +24,8 @@
 
 .Nav-menu{
     margin: 10px;
+}
+
+.buscador:hover{
+    cursor: pointer;
 }

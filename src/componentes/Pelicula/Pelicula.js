@@ -4,15 +4,15 @@ import CardPelicula from '../CardPelicula/CardPelicula';
 
 class Pelicula extends Component{
 
-    constructor(){
+    /* constructor(){
         super()
         this.state = {
             peli:[],
             nextURL: ''
         }
-    }
+    } */
     
-    componentDidMount(){
+    /* componentDidMount(){
 
     let url = "https://api.themoviedb.org/3/movie/popular?api_key=c2f0cd4705d9cf0edf12534fc1a19f65";
 
@@ -26,7 +26,7 @@ class Pelicula extends Component{
         })
     })
     .catch(error => console.log(error))
-    }
+    } */
 
 render(){
     return (

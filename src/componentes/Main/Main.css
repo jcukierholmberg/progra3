@@ -1,0 +1,10 @@
+.pointer{
+    cursor: pointer;
+}
+
+.Peliculas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 85px;
+}

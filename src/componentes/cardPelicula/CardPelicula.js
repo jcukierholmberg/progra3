@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import './CardPelicula.css' ;
 
-
-
-
 class CardPelicula extends Component{
     constructor(props){
         super(props)
@@ -29,22 +26,17 @@ class CardPelicula extends Component{
     }
 
     render(){
-        // console.log(this.props);
         return (
-            // <div className="card-pelicula">
-            //     <h4>{this.props.dataPelicula.title}</h4>
-            // </div>
-
             <article className="cards">
             <section className="navigation">
                 <div>
-                    <i className="fas fa-chevron-left"></i>
-                    <i className="fas fa-arrow-right"></i>
+                    <i className="fas fa-chevron-left flecha"></i>
+                    <i className="fas fa-chevron-right flecha"></i>
                 </div>
-                <i className="far fa-window-close"></i>
+                <i class="fas fa-trash trash" onClick = {()=>this.props.borrar(this.props.dataPelicula.id)}></i>
             </section>
             <main>
-                <img src="./img/image-default.png" alt=""/> 
+                <img src={this.props.dataPelicula.poster_path} alt=""/> 
                 <h3>{this.props.dataPelicula.title}</h3>
                 <p className="description">{this.props.dataPelicula.overview}</p>
                 <section className= {`extra  ${this.state.cambiar ? "mostrar" : "nomostrar"}`}> 
@@ -55,9 +47,6 @@ class CardPelicula extends Component{
                 <p className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </p>
             </main>
             </article>
-
-
-
         );
     }
 }

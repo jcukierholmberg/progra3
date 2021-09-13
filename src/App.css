@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color:black;
 }
 
 
@@ -19,12 +20,6 @@
   color: white;
 }
 
-.Peliculas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
 
 .App-link {

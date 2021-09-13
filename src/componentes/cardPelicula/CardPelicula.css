@@ -1,14 +1,25 @@
 .cards{
-    width: 25%;
-    padding: 10px;
-    gap:10px;
-    border-radius: 1px;
+    width: 24%;
+    border-radius: 10px;
     border-color: black;
     outline-width:2px;
     outline-style: solid;
     outline-color: black;
-    max-height: 500px;
+    background-color: white;
+    margin-bottom: 10px;
+    
+}
 
+.cards:hover{
+    
+}
+
+.trash:hover{
+    cursor: pointer;
+}
+
+.flecha:hover{
+    cursor: pointer;
 }
 
 .more{

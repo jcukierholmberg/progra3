@@ -1,13 +1,29 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import Header from './componentes/Header/Header';
+import Main from './componentes/Main/Main';
 import Footer from './componentes/Footer/Footer';
-import Pelicula from './componentes/Pelicula/Pelicula';
-
-
+import Head from './componentes/Head/Head';
 
 function App(){
+  return(
+    <React.Fragment>
+      <Head />
+      <div className="App">
+          <Main />
+      <footer>
+          <Footer />
+      </footer>
+      </div>
+    </React.Fragment>
+  )
+}
+
+
+
+
+
+/* function App(){
   return(
     <div className="App">
       <header>
@@ -26,7 +42,7 @@ function App(){
     </footer>
     </div>
   )
-}
+} */
 
 {/* function App() {
   return (
