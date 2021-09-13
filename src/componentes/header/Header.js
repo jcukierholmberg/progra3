@@ -7,9 +7,27 @@ class Header extends Component {
 
   constructor(props){
     super(props)
+    this.state = {
+      text: "Filas",
+      cambiar: false
+  }
+}
 
+cambiar(){
+  if(this.state.cambiar){
+      this.setState({
+          text: "Filas",
+          cambiar: false,
+      })
+  }
+  else{
+      this.setState({
+          text: "Columnas",
+          cambiar: true,
+      })
+  }
+}
 
-  } 
   
   render(){
     return (
@@ -20,7 +38,7 @@ class Header extends Component {
     
           <div className="Menu-buttons">
             
-            <button className="Nav-menu"> Ordenar ASC/DESC </button>
+            <button className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </button>
             <i class="fas fa-list"></i>
             <i class="fas fa-columns"></i>
 

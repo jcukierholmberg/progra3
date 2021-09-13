@@ -10,7 +10,7 @@ class Main extends Component{
         this.state = {
             peli:[],
             nextURL: '',
-            peliculasFiltro: []
+            peliculasFiltro: [],
         }
     }
 
@@ -62,6 +62,8 @@ class Main extends Component{
         })
       }    
 
+
+
     render(){
         return(
             <React.Fragment>
@@ -78,6 +80,8 @@ class Main extends Component{
                 }
                 </div>
                 <button className="pointer" type="button" onClick={()=>this.agregarTarjeta()}>Cargar más tarjetas</button>
+
+                
 
             </React.Fragment>
             )
