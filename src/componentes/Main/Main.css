@@ -3,8 +3,23 @@
     margin-bottom: 90px;
 }
 
-.Peliculas {
+.Peliculas{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.PeliculasFila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.PeliculasColumna{
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 10px;

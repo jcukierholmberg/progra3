@@ -35,3 +35,13 @@ cursor: pointer;
 .nomostrar{
     display: none;
 }
+
+.Filas{
+    display: flex;
+    flex-direction: row;
+}
+
+.Columnas{
+    display: flex;
+    flex-direction: column;
+}
