@@ -9,7 +9,7 @@ class Header extends Component {
   constructor(props){
     super(props)
     this.state = {
-      text: "Filas",
+      text: "Ordenar por columnas",
       cambiar: false
   }
 }
@@ -17,13 +17,13 @@ class Header extends Component {
 cambiar(){
   if(this.state.cambiar){
       this.setState({
-          text: "Filas",
+          text: "Ordenar por columnas",
           cambiar: false,
       })
   }
   else{
       this.setState({
-          text: "Columnas",
+          text: "Ordenar por filas",
           cambiar: true,
       })
   }
