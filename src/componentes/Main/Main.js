@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
+import FilterField from "../FilterField/FilterField";
 import CardPelicula from "../CardPelicula/CardPelicula";
 import './Main.css' ;
 
@@ -8,7 +9,8 @@ class Main extends Component{
         super()
         this.state = {
             peli:[],
-            nextURL: ''
+            nextURL: '',
+            peliculasFiltro: []
         }
     }
 
@@ -22,7 +24,8 @@ class Main extends Component{
             console.log(data)
             this.setState({
                 peli: data.results,
-                nextURL: data.page + 1
+                nextURL: data.page + 1,
+                peliculasFiltro: data.results
             })
         })
         .catch(error => console.log(error))
@@ -51,14 +54,19 @@ class Main extends Component{
         .catch(error => console.log(error))
     }
 
-
-
+    filtro(textoAFiltrar){
+        let peliculasFiltradas = this.state.peliculasFiltro.filter( pelicula => pelicula.title.toLowerCase().includes(textoAFiltrar.toLowerCase()));
     
+        this.setState({
+            peli: peliculasFiltradas
+        })
+      }    
+
     render(){
         return(
             <React.Fragment>
-                <Header />
-                <button className="pointer" type="button" onClick={()=>this.agregarTarjeta()}>Cargar más tarjetas</button>
+                <Header  filtro={(textoAFiltrar)=>this.filtro(textoAFiltrar)}/>
+                
                 <div>
                 {this.state.peli === ""? 
                 <h3>Cargando...</h3>:
@@ -69,6 +77,8 @@ class Main extends Component{
                 </div>
                 }
                 </div>
+                <button className="pointer" type="button" onClick={()=>this.agregarTarjeta()}>Cargar más tarjetas</button>
+
             </React.Fragment>
             )
         }

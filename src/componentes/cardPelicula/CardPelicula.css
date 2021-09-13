@@ -1,17 +1,15 @@
 .cards{
     width: 24%;
     border-radius: 10px;
-    border-color: black;
-    outline-width:2px;
-    outline-style: solid;
-    outline-color: black;
     background-color: white;
     margin-bottom: 10px;
     
 }
 
 .cards:hover{
-    
+    box-shadow: 5px 10px 18px  #3b3a3a;
+    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      
 }
 
 .trash:hover{

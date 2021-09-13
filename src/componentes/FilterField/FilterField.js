@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 
 class FilterField extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state ={
             filterBy:''
         }
     }
+
     evitarSubmit(e){
         e.preventDefault();
         console.log('Evitando el envío')
@@ -15,7 +16,9 @@ class FilterField extends Component {
     controlarCambios(event){
         this.setState({
             filterBy: event.target.value
-        }, () => this.props.filtrarPersonajes(this.state.filterBy))
+            },
+             
+        () => this.props.filtro(this.state.filterBy))
         
     }
 

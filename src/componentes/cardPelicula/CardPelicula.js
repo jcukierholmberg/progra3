@@ -36,13 +36,13 @@ class CardPelicula extends Component{
                 <i class="fas fa-trash trash" onClick = {()=>this.props.borrar(this.props.dataPelicula.id)}></i>
             </section>
             <main>
-                <img src={this.props.dataPelicula.poster_path} alt=""/> 
+                <img src= { "https://image.tmdb.org/t/p/w300" + this.props.dataPelicula.poster_path }/> 
                 <h3>{this.props.dataPelicula.title}</h3>
                 <p className="description">{this.props.dataPelicula.overview}</p>
                 <section className= {`extra  ${this.state.cambiar ? "mostrar" : "nomostrar"}`}> 
-                    <p>{this.props.dataPelicula.popularity}</p>
-                    <p>{this.props.dataPelicula.release_date}</p>
-                    <p>{this.props.dataPelicula.original_language}</p>
+                    <p> <b>Popularity:</b>  {this.props.dataPelicula.popularity}</p>
+                    <p><b>Release date:</b> {this.props.dataPelicula.release_date}</p>
+                    <p><b>Language:</b> {this.props.dataPelicula.original_language}</p>
                 </section>
                 <p className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </p>
             </main>
