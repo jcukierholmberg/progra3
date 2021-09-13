@@ -1,6 +1,6 @@
 import React, {Component} from 'react'; 
 import './Pelicula.css' ;
-import CardPelicula from '../cardPelicula/CardPelicula';
+import CardPelicula from '../CardPelicula/CardPelicula';
 
 class Pelicula extends Component{
 
@@ -31,13 +31,20 @@ class Pelicula extends Component{
 render(){
     return (
         <React.Fragment>
-        <div className="Peliculas">
-            {
-                this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula}/>)
-            }
-        </div>
+            <div>
+                {this.state.peli === ""? 
+                <h3>Cargando...</h3>:
+                <div className="Peliculas">
+                {
+                    this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula}/>)
+                }
+                </div>
+                }
+            </div>
+            
         </React.Fragment>
         );
     }
 }
+
 export default Pelicula ;

@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
 import React from "react";
-import Header from './componentes/header/Header';
+import Header from './componentes/Header/Header';
 import Footer from './componentes/Footer/Footer';
 import Pelicula from './componentes/Pelicula/Pelicula';
+
 
 
 function App(){
@@ -15,141 +16,9 @@ function App(){
       <main>
           <button type="button">Cargar más tarjetas</button>
           <section class="card-container">
-              <article>
-                  <Pelicula />
-              </article>
-              <article>
-                  <section class="navigation">
-                      <div>
-                          <i class="fas fa-chevron-left"></i>
-                          <i class="fas fa-chevron-right"></i>
-                      </div>
-                      <i class="far fa-window-close"></i>
-                  </section>
-                  <main>
-                      <img src="./img/image-default.png" alt=""/>
-                      <h3>Título/ Nombre</h3>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque velit minus facere
-                          laboriosam voluptatem impedit ea unde labore optio eius quis, dignissimos expedita. Culpa, soluta
-                          perspiciatis! Sint, laboriosam cum.</p>
-                      <section class="aditional-info">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                      </section>
-                      <a href="">Ver más</a>
-                  </main>
-              </article>
-              <article>
-                  <section class="navigation">
-                      <div>
-                          <i class="fas fa-chevron-left"></i>
-                          <i class="fas fa-chevron-right"></i>
-                      </div>
-                      <i class="far fa-window-close"></i>
-                  </section>
-                  <main>
-                      <img src="./img/image-default.png" alt=""/>
-                      <h3>Título/ Nombre</h3>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque velit minus facere
-                          laboriosam voluptatem impedit ea unde labore optio eius quis, dignissimos expedita. Culpa, soluta
-                          perspiciatis! Sint, laboriosam cum.</p>
-                      <section class="aditional-info">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                      </section>
-                      <a href="">Ver más</a>
-                  </main>
-              </article>
-              <article>
-                  <section class="navigation">
-                      <div>
-                          <i class="fas fa-chevron-left"></i>
-                          <i class="fas fa-chevron-right"></i>
-                      </div>
-                      <i class="far fa-window-close"></i>
-                  </section>
-                  <main>
-                      <img src="./img/image-default.png" alt=""/>
-                      <h3>Título/ Nombre</h3>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque velit minus facere
-                          laboriosam voluptatem impedit ea unde labore optio eius quis, dignissimos expedita. Culpa, soluta
-                          perspiciatis! Sint, laboriosam cum.</p>
-                      <section class="aditional-info">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                      </section>
-                      <a href="">Ver más</a>
-                  </main>
-              </article>
-              <article>
-                  <section class="navigation">
-                      <div>
-                          <i class="fas fa-chevron-left"></i>
-                          <i class="fas fa-chevron-right"></i>
-                      </div>
-                      <i class="far fa-window-close"></i>
-                  </section>
-                  <main>
-                      <img src="./img/image-default.png" alt=""/>
-                      <h3>Título/ Nombre</h3>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque velit minus facere
-                          laboriosam voluptatem impedit ea unde labore optio eius quis, dignissimos expedita. Culpa, soluta
-                          perspiciatis! Sint, laboriosam cum.</p>
-                      <section class="aditional-info">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                      </section>
-                      <a href="">Ver más</a>
-                  </main>
-              </article>
-              <article>
-                  <section class="navigation">
-                      <div>
-                          <i class="fas fa-chevron-left"></i>
-                          <i class="fas fa-chevron-right"></i>
-                      </div>
-                      <i class="far fa-window-close"></i>
-                  </section>
-                  <main>
-                      <img src="./img/image-default.png" alt=""/>
-                      <h3>Título/ Nombre</h3>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque velit minus facere
-                          laboriosam voluptatem impedit ea unde labore optio eius quis, dignissimos expedita. Culpa, soluta
-                          perspiciatis! Sint, laboriosam cum.</p>
-                      <section class="aditional-info">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                      </section>
-                      <a href="">Ver más</a>
-                  </main>
-              </article>
-              <article>
-                  <section class="navigation">
-                      <div>
-                          <i class="fas fa-chevron-left"></i>
-                          <i class="fas fa-chevron-right"></i>
-                      </div>
-                      <i class="far fa-window-close"></i>
-                  </section>
-                  <main>
-                      <img src="./img/image-default.png" alt=""/>
-                      <h3>Título/ Nombre</h3>
-                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint cumque velit minus facere
-                          laboriosam voluptatem impedit ea unde labore optio eius quis, dignissimos expedita. Culpa, soluta
-                          perspiciatis! Sint, laboriosam cum.</p>
-                      <section class="aditional-info">
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse qui atque.</p>
-                      </section>
-                      <a href="">Ver más</a>
-                  </main>
-              </article>
+              
+          <Pelicula />
+              
           </section>
       </main>
     <footer>

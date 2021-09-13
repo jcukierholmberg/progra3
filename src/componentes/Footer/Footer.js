@@ -1,12 +1,13 @@
 import React from 'react';
+import './Footer.css' ;
 
 function Footer() {
     return(
-    <ul className="footer">
-                <li>Joaquin Cukier</li>
-                <li>Kiara Anderson</li>
-                <li>Flor Aguirre</li>
-    </ul>
+    <h1 className="text">
+        Joaquin Cukier,
+        Kiara Anderson,
+        Flor Aguirre
+    </h1>
     )
 }
 
