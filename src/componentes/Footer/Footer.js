@@ -3,11 +3,11 @@ import './Footer.css' ;
 
 function Footer() {
     return(
-    <h1 className="text">
+    <h2 className="text">
         Joaquin Cukier,
         Kiara Anderson,
         Flor Aguirre
-    </h1>
+    </h2>
     )
 }
 

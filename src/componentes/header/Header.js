@@ -35,13 +35,13 @@ cambiar(){
       
       <header className="App-header">
 
-          <h1 className="tituloApp"> Nombre de la App </h1> 
+          <h1 className="tituloApp"> POPCORN MOVIE</h1> 
     
           <div className="Menu-buttons">
             
             <button className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </button>
             <i class="fas fa-list"></i>
-            <i class="fas fa-columns"></i>
+            {/* <i class="fas fa-columns"></i> */}
 
             <div className="row card-container">
                     <FilterField filtro={(textoAFiltrar)=>this.props.filtro(textoAFiltrar)}/>
