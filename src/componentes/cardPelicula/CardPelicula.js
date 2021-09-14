@@ -25,6 +25,8 @@ class CardPelicula extends Component{
         }
     }
 
+
+
     render(){
         return (
             <article className="cards">
@@ -34,6 +36,7 @@ class CardPelicula extends Component{
                     <i className="fas fa-chevron-right flecha"></i>
                 </div>
                 <i class="fas fa-trash trash" onClick = {()=>this.props.borrar(this.props.dataPelicula.id)}></i>
+                
             </section>
             <main>
                 <img src= { "https://image.tmdb.org/t/p/w300" + this.props.dataPelicula.poster_path }/> 

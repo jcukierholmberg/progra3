@@ -14,21 +14,6 @@ class Header extends Component {
   }
 }
 
-cambiar(){
-  if(this.state.cambiar){
-      this.setState({
-          text: "Ordenar por columnas",
-          cambiar: false,
-      })
-  }
-  else{
-      this.setState({
-          text: "Ordenar por filas",
-          cambiar: true,
-      })
-  }
-}
-
   
   render(){
     return (
@@ -39,7 +24,6 @@ cambiar(){
     
           <div className="Menu-buttons">
             
-            <button className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </button>
             <i class="fas fa-list"></i>
             {/* <i class="fas fa-columns"></i> */}
 

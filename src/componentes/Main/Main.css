@@ -3,21 +3,16 @@
     margin-bottom: 90px;
 }
 
-.Peliculas{
+
+
+.Filas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 10px;
 }
 
-.PeliculasFila {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-bottom: 10px;
-}
-
-.PeliculasColumna{
+.Columnas{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,4 +39,27 @@
     transition: all 0.2s;
     width: 150px;
     height: 40px;
+}
+
+.Orden{
+    width: 100%;
+    size: 40px;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color: black;
+    text-align:center;
+    transition: all 0.2s;
+    width: 150px;
+    height: 40px;
+}
+
+.boton{
+    width:100%;
+    margin: 20px
 }

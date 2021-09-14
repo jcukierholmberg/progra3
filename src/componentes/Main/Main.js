@@ -11,6 +11,8 @@ class Main extends Component{
             peli:[],
             nextURL: '',
             peliculasFiltro: [],
+            button: "Ordenar por columnas",
+            filas: false,
         }
     }
 
@@ -62,6 +64,20 @@ class Main extends Component{
         })
       }    
 
+      filas(){
+        if(this.state.filas){
+            this.setState({
+                button: "Ordenar por columnas",
+                filas: false,
+            })
+        }
+        else{
+            this.setState({
+                button: "Ordenar por filas",
+                filas: true,
+            })
+        }
+      }
 
 
     render(){
@@ -72,7 +88,13 @@ class Main extends Component{
                 <div>
                 {this.state.peli === ""? 
                 <h3>Cargando...</h3>:
-                <div className="Peliculas">
+                
+                <div className= {`peliculas ${this.state.filas ? "Filas" : "Columnas"}`}>
+
+                <div className="boton">
+                <button className="Orden" onClick= { ()=>this.filas() } > {this.state.button} </button>
+                </div>  
+
                 {
                     this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula} borrar = {(id)=>this.eliminarTarjeta(id)}/>)
                 }
