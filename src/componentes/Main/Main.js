@@ -12,7 +12,7 @@ class Main extends Component{
             nextURL: '',
             peliculasFiltro: [],
             button: "Ordenar por columnas",
-            filas: false,
+            filas: true,
         }
     }
 
