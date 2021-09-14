@@ -86,20 +86,19 @@ class Main extends Component{
                 <Header  filtro={(textoAFiltrar)=>this.filtro(textoAFiltrar)}/>
                 
                 <div>
-                {this.state.peli === ""? 
-                <h3>Cargando...</h3>:
-                
+                    {this.state.peli === ""? 
+                    <h3>Cargando...</h3>:
                 <div className= {`peliculas ${this.state.filas ? "Filas" : "Columnas"}`}>
 
-                <div className="boton">
-                <button className="Orden" onClick= { ()=>this.filas() } > {this.state.button} </button>
-                </div>  
+                    <div className="boton">
+                    <button className="Orden" onClick= { ()=>this.filas() } > {this.state.button} </button>
+                    </div>  
 
-                {
+                    {
                     this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula} borrar = {(id)=>this.eliminarTarjeta(id)}/>)
-                }
-                </div>
-                }
+                    }
+                    </div>
+                    }
                 </div>
                 <button className="pointer" type="button" onClick={()=>this.agregarTarjeta()}>Cargar más tarjetas</button>
 

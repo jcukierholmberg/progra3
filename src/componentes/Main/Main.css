@@ -59,6 +59,10 @@
     height: 40px;
 }
 
+.Orden:hover{
+    cursor:pointer
+}
+
 .boton{
     width:100%;
     margin: 20px
