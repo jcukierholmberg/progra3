@@ -37,9 +37,11 @@
     transition: all 0.2s;
     width: 150px;
     height: 40px;
+    background-color: red;
 }
 
-.Orden{
+
+.orden{
     width: 100%;
     size: 40px;
     display:inline-block;
@@ -55,10 +57,12 @@
     transition: all 0.2s;
     width: 150px;
     height: 40px;
+    background-color: red;
 }
 
-.Orden:hover{
-    cursor:pointer
+.orden:hover{
+    cursor:pointer;
+    transform: scale(1.03);
 }
 
 .boton{
