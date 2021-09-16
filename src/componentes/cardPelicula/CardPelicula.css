@@ -57,7 +57,19 @@ text-decoration: underline;
 
 .columnas .cards {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.columnas .imagen {
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+
+
 
 
 

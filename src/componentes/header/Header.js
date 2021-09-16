@@ -20,10 +20,12 @@ class Header extends Component {
       <header className="App-header">
 
           <h1 className="tituloApp"> POPCORN MOVIE</h1> 
-    
+
+          {/* <img src="../../public/pochoclo.png"> jkas </img> */}
+     
           <div className="Menu-buttons">
             
-            <i class="fas fa-list"></i>
+            {/* <i class="fas fa-list"></i> */}
             {/* <i class="fas fa-columns"></i> */}
 
             <div className="row card-container">

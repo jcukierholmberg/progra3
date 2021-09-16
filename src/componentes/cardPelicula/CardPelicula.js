@@ -39,17 +39,21 @@ class CardPelicula extends Component{
                 
             </section>
             <main>
-                {/* <div className= {`orientaccion ${this.props.filas ? "cards" : "cambiado"}`}> */}
-                <img src= { "https://image.tmdb.org/t/p/w185" + this.props.dataPelicula.poster_path } alt=""/>
-                <h3>{this.props.dataPelicula.title}</h3>
-                <p className="description">{this.props.dataPelicula.overview}</p>
-                <section className= {`extra  ${this.state.cambiar ? "mostrar" : "nomostrar"}`}> 
-                    <p> <b>Popularity:</b>  {this.props.dataPelicula.popularity}</p>
-                    <p><b>Release date:</b> {this.props.dataPelicula.release_date}</p>
-                    <p><b>Language:</b> {this.props.dataPelicula.original_language}</p>
-                </section>
-                <p className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </p>
-                {/* </div> */}
+                
+                <div className="imagen">
+                    <img src= { "https://image.tmdb.org/t/p/w185" + this.props.dataPelicula.poster_path } alt=""/>
+                </div>
+
+                <div className="infoPeli">
+                    <h3 className="tituloPeli" >{this.props.dataPelicula.title}</h3>
+                    <p className="description">{this.props.dataPelicula.overview}</p>
+                    <section className= {`extra  ${this.state.cambiar ? "mostrar" : "nomostrar"}`}> 
+                        <p> <b>Popularity:</b>  {this.props.dataPelicula.popularity}</p>
+                        <p><b>Release date:</b> {this.props.dataPelicula.release_date}</p>
+                        <p><b>Language:</b> {this.props.dataPelicula.original_language}</p>
+                    </section>
+                    <p className="more" onClick= { ()=>this.cambiar() } > {this.state.text} </p>
+                </div> 
             </main>
             </article>
         );
