@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import FilterField from '../FilterField/FilterField';
 import './Header.css' ;
-import '../cardPelicula/CardPelicula.css' ;
+import '../CardPelicula/CardPelicula.css' ;
 
 
 class Header extends Component {
