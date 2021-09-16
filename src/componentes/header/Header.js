@@ -1,7 +1,7 @@
 import React, { Component } from 'react'; 
 import FilterField from '../FilterField/FilterField';
 import './Header.css' ;
-import '../CardPelicula/CardPelicula.css' ;
+import '../cardPelicula/CardPelicula.css' ;
 
 
 class Header extends Component {
@@ -17,7 +17,6 @@ class Header extends Component {
   
   render(){
     return (
-      
       <header className="App-header">
 
           <h1 className="tituloApp"> POPCORN MOVIE</h1> 
@@ -30,11 +29,9 @@ class Header extends Component {
             <div className="row card-container">
                     <FilterField filtro={(textoAFiltrar)=>this.props.filtro(textoAFiltrar)}/>
             </div>
-
           </div>
       </header>
-  
-      );
+    );
   }
   
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../Header/Header";
+import Header from "../header/Header";
 // import FilterField from "../FilterField/FilterField";
-import CardPelicula from "../CardPelicula/CardPelicula";
+import CardPelicula from "../cardPelicula/CardPelicula";
 import './Main.css' ;
 
 class Main extends Component{
@@ -13,6 +13,7 @@ class Main extends Component{
             peliculasFiltro: [],
             button: "Ordenar por columnas",
             filas: true,
+            mensaje: ""
         }
     }
 
@@ -62,9 +63,9 @@ class Main extends Component{
         this.setState({
             peli: peliculasFiltradas
         })
-      }    
+    }
 
-      filas(){
+    filas(){
         if(this.state.filas){
             this.setState({
                 button: "Ordenar por columnas",
@@ -77,13 +78,13 @@ class Main extends Component{
                 filas: true,
             })
         }
-      }
+    }
 
 
     render(){
         return(
             <React.Fragment>
-                <Header  filtro={(textoAFiltrar)=>this.filtro(textoAFiltrar)}/>
+                <Header filtro={(textoAFiltrar)=>this.filtro(textoAFiltrar)}/>
                 
                 <div>
                     {this.state.peli === ""? 
@@ -101,12 +102,9 @@ class Main extends Component{
                     }
                 </div>
                 <button className="pointer" type="button" onClick={()=>this.agregarTarjeta()}>Cargar más tarjetas</button>
-
-                
-
             </React.Fragment>
-            )
-        }
+        )
+    }
 }
 
 export default Main
