@@ -54,3 +54,17 @@ text-decoration: underline;
     display: flex;
     flex-direction: column;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .cards{
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cards{
+        width: 99%;
+    }
+}

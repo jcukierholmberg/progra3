@@ -40,7 +40,7 @@ class CardPelicula extends Component{
             </section>
             <main>
                 {/* <div className= {`orientaccion ${this.props.filas ? "cards" : "cambiado"}`}> */}
-                <img src= { "https://image.tmdb.org/t/p/w300" + this.props.dataPelicula.poster_path } alt=""/>
+                <img src= { "https://image.tmdb.org/t/p/w185" + this.props.dataPelicula.poster_path } alt=""/>
                 <h3>{this.props.dataPelicula.title}</h3>
                 <p className="description">{this.props.dataPelicula.overview}</p>
                 <section className= {`extra  ${this.state.cambiar ? "mostrar" : "nomostrar"}`}> 

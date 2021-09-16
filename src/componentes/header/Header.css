@@ -61,5 +61,9 @@ button.more{
     cursor: pointer;
 }
 
-
-
+@media only screen and (max-width: 480px) {
+    .App-header{
+        display: flex;
+        flex-direction: column;
+    }
+}
