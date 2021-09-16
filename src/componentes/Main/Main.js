@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../header/Header";
+import Header from "../Header/Header";
 // import FilterField from "../FilterField/FilterField";
-import CardPelicula from "../cardPelicula/CardPelicula";
+import CardPelicula from "../CardPelicula/CardPelicula";
 import './Main.css' ;
 
 class Main extends Component{
@@ -92,7 +92,7 @@ class Main extends Component{
                 <div className= {`peliculas ${this.state.filas ? "filas" : "columnas"}`}>
 
                     <div className="boton">
-                    <button className="Orden" onClick= { ()=>this.filas() } > {this.state.button} </button>
+                    <button className="orden" onClick= { ()=>this.filas() } > {this.state.button} </button>
                     </div>  
 
                     {

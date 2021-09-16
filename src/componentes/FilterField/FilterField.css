@@ -1,10 +1,20 @@
 .buscador{
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 15px;
+    color: red;
 }
 
-.fa-search:before{
-    margin-left: 20px;
+.input {
+    height: 35px;
+    width: 300px;
+    border-color: red;
+    border-style: double;
+   border-radius: 8px;
+    border-spacing: 0,6px;
+    box-shadow: red;
+    border-width: 5px;
 }
+
+
 
 

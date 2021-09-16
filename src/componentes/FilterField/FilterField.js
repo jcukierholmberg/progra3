@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import './FilterField.css' ;
 
 class FilterField extends Component {
     constructor(props){
@@ -25,9 +26,9 @@ class FilterField extends Component {
     render(){
         return(
             <form action="" onSubmit={(m)=>this.evitarSubmit(m)}>
-                <input type="text" onChange={(f)=>this.controlarCambios(f)} value={this.state.filterBy} placehoder="Filtrar pelicula"/>
+                <input className="input" type="text" onChange={(f)=>this.controlarCambios(f)} value={this.state.filterBy} placeholder="Buscar pelicula"/>
                 <span className="input-group-text border-0" id="search-addon">
-                  <i className="fas fa-search buscador" ></i>
+                    <i className="fas fa-search buscador" ></i>
                 </span>
             </form>
         )
