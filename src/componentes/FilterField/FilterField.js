@@ -24,7 +24,7 @@ class FilterField extends Component {
 
     render(){
         return(
-            <form action="" onSubmit={(m)=>this.evitarSubmit(m)}>
+            <form action="" onSubmit={()=>this.evitarSubmit()}>
                 <input type="text" onChange={(f)=>this.controlarCambios(f)} value={this.state.filterBy} placehoder="Filtrar pelicula"/>
                 <span className="input-group-text border-0" id="search-addon">
                   <i className="fas fa-search buscador" ></i>
