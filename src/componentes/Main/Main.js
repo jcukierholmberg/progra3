@@ -89,13 +89,15 @@ class Main extends Component{
                 <div>
                     {this.state.peli === ""? 
                     <h3>Cargando...</h3>:
-                <div className= {`peliculas ${this.state.filas ? "Filas" : "Columnas"}`}>
+                <div className= {`peliculas ${this.state.filas ? "filas" : "columnas"}`}>
 
                     <div className="boton">
                     <button className="Orden" onClick= { ()=>this.filas() } > {this.state.button} </button>
                     </div>  
 
                     {
+                    this.state.peli.length === 0 ? 
+                        <p className= "blanco"> No hay resultados para su busqueda</p> :
                     this.state.peli.map((pelicula, idx)=> <CardPelicula key={pelicula.title + idx} dataPelicula={pelicula} borrar = {(id)=>this.eliminarTarjeta(id)}/>)
                     }
                     </div>

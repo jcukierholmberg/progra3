@@ -3,14 +3,14 @@
     margin-bottom: 90px;
 }
 
-.Filas {
+.filas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 10px;
 }
 
-.Columnas{
+.columnas{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -64,4 +64,8 @@
 .boton{
     width:100%;
     margin: 20px
+}
+
+.blanco{
+    color: white;
 }

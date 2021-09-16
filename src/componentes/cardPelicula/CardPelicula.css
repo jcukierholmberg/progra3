@@ -44,15 +44,19 @@ text-decoration: underline;
 .nomostrar{
     display: none;
 }
-
-.Filas{
+/* 
+.filas{
     display: flex;
     flex-direction: row;
 }
 
-.Columnas{
+.columnas{
     display: flex;
     flex-direction: column;
+} */
+
+.columnas .cards {
+    width: 100%;
 }
 
 
