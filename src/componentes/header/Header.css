@@ -8,10 +8,15 @@
     color: white;
 }
 
+.logo{
+    height: 60px;
+
+}
+
 
 .tituloApp {
     text-align: left;
-    width: 50%;
+    width: 60%;
     margin-left: 20px;
 }
 
@@ -55,11 +60,18 @@ button.more{
 
 .fa-list:before {
     margin-right: 20px;
+    
+}
+
+.fa-list {
+    margin-left: 20px;
 }
 
 .fa-list:hover {
     cursor: pointer;
 }
+
+
 
 @media only screen and (max-width: 480px) {
     .App-header{

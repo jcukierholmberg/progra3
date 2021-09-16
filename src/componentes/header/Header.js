@@ -19,9 +19,11 @@ class Header extends Component {
     return (
       <header className="App-header">
 
-          <h1 className="tituloApp"> POPCORN MOVIE</h1> 
-
-          {/* <img src="../../public/pochoclo.png"> jkas </img> */}
+          <h1 className="tituloApp"> 
+          <img className="logo" src="/pochoclo.png" /> 
+          POPCORN MOVIE  
+          </h1> 
+       
      
           <div className="Menu-buttons">
             
