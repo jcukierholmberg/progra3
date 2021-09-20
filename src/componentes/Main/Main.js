@@ -11,7 +11,7 @@ class Main extends Component{
             peli:[],
             nextURL: '',
             peliculasFiltro: [],
-            button: "Ordenar por columnas",
+            button: "Ordenar por filas",
             filas: true,
             mensaje: ""
         }
