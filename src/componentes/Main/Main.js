@@ -11,7 +11,7 @@ class Main extends Component{
             peli:[],
             nextURL: '',
             peliculasFiltro: [],
-            button: "Ordenar por filas",
+            button: "Ordenado por filas",
             filas: true,
             mensaje: ""
         }
@@ -68,13 +68,13 @@ class Main extends Component{
     filas(){
         if(this.state.filas){
             this.setState({
-                button: "Ordenar por columnas",
+                button: "Ordenado por columnas",
                 filas: false,
             })
         }
         else{
             this.setState({
-                button: "Ordenar por filas",
+                button: "Ordenado por filas",
                 filas: true,
             })
         }
