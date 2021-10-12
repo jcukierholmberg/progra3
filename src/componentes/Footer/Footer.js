@@ -4,7 +4,7 @@ import './Footer.css' ;
 function Footer() {
     return(
     <h2 className="text">
-        Joaquin Cukier,
+        Joaquin Cukierr,
         Kiara Anderson,
         Flor Aguirre
     </h2>
